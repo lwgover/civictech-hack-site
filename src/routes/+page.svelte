@@ -9,19 +9,19 @@
     {
       acronym: "CMS",
       fullName: "Centers for Medicare & Medicaid Services",
-      backgroundImage: "/images/CMS.png",
+      backgroundImage: `${base}/images/CMS.png`,
       href: `${base}/docket`
     },
     {
       acronym: "FTA",
       fullName: "Federal Transit Administration",
-      backgroundImage: "/images/FTA.png",
+      backgroundImage: `${base}/images/FTA.png`,
       href: `${base}/docket`
     },
     {
       acronym: "HUD",
       fullName: "Department of Housing and Urban Development",
-      backgroundImage: "/images/HUD.png",
+      backgroundImage: `${base}/images/HUD.png`,
       href: `${base}/docket`
     }
   ];
@@ -94,7 +94,7 @@
 </section>
 
 <!-- Agency Cards Section -->
-<section class="py-16 px-4 lg:px-8 bg-gray-50">
+<section class="py-16 px-4 lg:px-8 bg-white">
   <div class="max-w-7xl mx-auto">
     <h2 class="text-4xl font-bold text-center text-gray-800 mb-12 font-raleway">Explore Agencies</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

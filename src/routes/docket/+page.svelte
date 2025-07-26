@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { base } from '$app/paths';
   import Footer from '$lib/components/Footer.svelte';
   import Card from '$lib/components/Card.svelte';
   import homepageBackground from '../../images/homepage-background.jpg';
@@ -10,7 +11,7 @@
   
   // Sentiment color mapping
   const sentimentColors = {
-    positive: 'text-green-600 bg-green-100 p-1',
+    positive: 'text-green-600 bg-green-100 p-1 p-left-3 p-right-3',
     negative: 'text-red-600 bg-red-100 p-1', 
     neutral: 'text-gray-600 bg-gray-100 p-1'
   };
@@ -26,7 +27,7 @@
     try {
       // Only fetch data in the browser, not during prerendering
       if (typeof window !== 'undefined') {
-        const response = await fetch('/example_data/CMS1.json');
+        const response = await fetch(`${base}/example_data/CMS1.json`);
         if (!response.ok) {
           throw new Error('Failed to load CMS data');
         }
@@ -151,7 +152,7 @@
                       <h4 class="text-sm font-semibold text-gray-700 mb-2">Related Policy Sections:</h4>
                       <div class="flex flex-wrap gap-2">
                         {#each issue.related_policy_sections as section}
-                          <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">
+                          <span class="bg-blue-100 text-blue-800 text-xs rounded-full p-1">
                             {section}
                           </span>
                         {/each}

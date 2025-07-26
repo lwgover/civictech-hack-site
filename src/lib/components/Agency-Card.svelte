@@ -24,12 +24,13 @@
         border-radius: 3px;
         box-shadow: 0 0px 4px rgba(0,0,0,0.1);
         overflow: hidden;
-        width: 600px;
-        height:450px;
+        width: 300px;
+        height:250px;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         cursor: pointer;
         text-decoration: none;
         color: inherit;
+        padding-bottom: 30px;
     }
 
     .agency-card:hover {
